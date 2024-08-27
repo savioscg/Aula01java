@@ -1,0 +1,15 @@
+public class Main {
+    public static void main(String[] args) {
+        JogadorFutebolAmericano jogador = new JogadorFutebolAmericano("Tom Brady", "Quarterback", 50, 4000, 15);
+
+
+        jogador.exibirEstatisticas();
+
+        jogador.marcarTouchdown();
+        jogador.correrJardas(300);
+        jogador.exibirEstatisticas();
+
+        boolean lesionado = jogador.estaLesionado();
+        System.out.println("Está lesionado? " + (lesionado ? "Sim" : "Não"));
+    }
+}
